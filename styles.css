@@ -1,0 +1,675 @@
+
+html {
+    scroll-padding-top: 50px; /* Adjust to match height of your navbar */
+}
+
+
+body {
+    /* Add a background color or image */
+    background-color:  rgb(113, 0, 128); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+    padding-bottom: 80px;
+}
+
+
+h1 {
+    background-color: greenyellow;
+    font-family: monospace;
+    font-size: 48px;
+    padding: 16px 24px;
+    margin: 0;
+    border-radius: 16px;
+    color: purple;  
+}
+
+h2 {
+    background-color: greenyellow;
+    font-size: 22px;
+    font-weight: bold;
+    color: purple;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+  
+}
+
+.tagline {
+    text-align: left;
+    background-color: greenyellow;
+    font-size: 22px;
+    font-weight: bold;
+    color: purple;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    width: fit-content;
+}
+
+.centered-section {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#interesting {
+    text-decoration: underline;
+    background: yellow;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+  background-color: greenyellow;  
+}
+
+h4 {
+    background-color: yellow;
+}
+
+p {
+   font-size: 15px;
+    background-color: lightblue; 
+}
+
+.h4-section {
+    background-color: lightblue;
+}
+
+
+.schedule-image {
+    width: 360px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.event1-image {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.event2-image {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.center-video1 {
+    text-align: center;
+}
+.center-video1 iframe {
+    display: inline-block;
+    
+}
+
+.center-video2 {
+    text-align: center;
+}
+.center-video2 iframe {
+    display: inline-block;
+    
+}
+
+
+
+/* Unvisited link */
+a:link {
+  color: black;
+  margin: 15px;
+  border: solid yellow;
+  display: block;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* Mouse over link */
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Selected (active) link */
+a:active {
+  color: orange;
+  background-color: #dcdcdc; ;
+}
+
+a article h2 {
+    color:lightblue;
+    font-size: 20px;
+
+}
+
+a article h3 {
+    font-size: 20px;
+
+}
+
+a article p {
+    font-family: Arial;
+    font-size: 15px;
+    color:black;
+
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    padding: 40px;
+}
+
+.header-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#header-item:nth-of-type(1) {
+    width: 60%;
+    gap: 10%;
+}
+
+#header-item:nth-of-type(2) {
+    width: 40%;
+    gap: 10%;
+}
+
+#header-img {
+    height: 100px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.header-button {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 18px;
+    color: purple;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border: 2px solid yellow ;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+button {
+    /* Example Style, replace with your own! */
+    font-size: 30px;
+    font-family: monospace;
+    background-color: red;
+    display: block;
+    margin: 10px auto;   /* button color */
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+.button-group {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+    background-color: greenyellow;
+}
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #482f95;
+    text-align: center;
+    color:#231942;
+    font-size: 15px;
+    padding: 6px;
+    margin: 10px;
+    font-size: 12px;
+    z-index: 1000;
+    
+
+}
+
+.footer a {
+    color: lightblue;
+    padding : 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar {
+    background-color: #3e3377;;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14 20 px;
+    font-family: monospace;
+    font-size: 16px;
+    color: purple;
+    background-color: lightblue;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+
+.navbar ul li a:hover {
+  background-color: greenyellow; 
+  color: purple;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.navbar button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 14 20px;
+  font-family: monospace;
+  font-size: 16px;
+  color: purple;
+  background-color: lightblue;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: greenyellow;
+  color: purple;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--accent-color-light);
+  border-radius: 10px;
+}
+
+.schedule-item {
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.schedule-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+/* Add other rsvp-related selectors here */
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rsvp-form button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: greenyellow; 
+  color: purple;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.rsvp-form label {
+  font-weight: bold;       
+  color: white;            
+  font-size: 16px;         
+  min-width: 90px;        
+  display: inline-block;  
+}
+
+.rsvp-form button:hover {
+  background-color: #4c1d95;
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border: 2px solid red;
+  background-color: #ffe6e6;
+
+  /* Set border-color and background */
+}
+
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+ /**Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 20px;
+    width: 55%;
+    GAP: 20px;
+    border-radius: 10px;
+
+    /* Customize modal style here */
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+.modal-item img {
+    /* Optional: Style individual elements within the modal */
+    width: 150px;
+    height: auto;
+}
+
+.modal-close-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color:purple;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/* Default dark mode style */
+.dark-mode {
+    background-color: #3e3377;
+    color: white;
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1, 
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode .h4-section,
+.dark-mode .tagline,
+.dark-mode #interesting,
+.dark-mode .header-button,
+.dark-mode .schedule-item,
+.dark-mode p {
+    background-color:#231942;
+    color: white;
+    
+}
+
+.dark-mode .navbar {
+    background-color:#231942;
+}
+
+.dark-mode .navbar ul li a {
+  background-color: white;
+  color:  #231942;;
+}
+
+.dark-mode .navbar ul li a:hover {
+  background-color: white;
+  color: #231942;
+}
+
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+    background-color: black ;
+    color: white ;
+}
+
+.dark-mode .header-button:hover,
+.dark-mode button:hover {
+  background-color: white;
+  color: #5e4b8b ;
+}
+
+#theme-button {
+  background-color: lightblue;
+  color: purple;
+  padding: 6px 12px;
+  font-family: monospace;
+  font-size: 14px;
+  border-style: dashed;
+  border-color: yellow;
+  border-spacing: 5px;
+  border-width: 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: underline wavy yellow;
+
+}
+
+
+#theme-button:hover {
+  background-color: #684fb5; 
+  color: black;              
+  border-color: white;           
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
