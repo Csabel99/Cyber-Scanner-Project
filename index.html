@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <title>Cyber Scanner</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="https://st.depositphotos.com/1717137/1269/v/950/depositphotos_12691995-stock-illustration-smart-dog-with-computer.jpg">
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+    
+     <!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+When To Modify:
+- [ ] Project 4 (REQUIRED FEATURE)
+- [ ] Project 5 (REQUIRED FEATURE) 
+- [ ] Project 8 (STRETCH FEATURE) 
+- [ ] Any time between / after
+-->
+<div class="navbar">
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><button id = "theme-button">Toggle Dark Mode</button></li>
+    <li><button id="reduce-motion-button">Reduce Motion</button></li>
+    </ul>
+</div>
+
+    <div class="header-container" id="home">
+        <div class="header-item">
+            <img id = "header-img" src="https://st.depositphotos.com/1717137/1269/v/950/depositphotos_12691995-stock-illustration-smart-dog-with-computer.jpg">
+            </div>
+
+        <div class="header-item">
+            <div class="header-text">
+                <h1>Cyber Scanner</h1>
+                <h2 class="tagline">Scan. Learn. Prevent threats.</h2>
+        </div>
+    </div>
+</div>
+
+        <div class="center-section">
+            <p id="interesting">Click "SCAN" to determine threats | 
+            Click the Learn More Button for more infromation about threats.</p>
+
+    <div class = "button-group">
+        <button class="header-button">SCAN</button>
+        <button class="header-button">Learn More</button>
+        </div>
+    </div>
+</div>
+            
+
+        
+        <!--  about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+    <div id="rsvp">
+        <h2>RSVP</h2>
+
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Cyber Scanner is call all curious minds! Wheather you're new 
+            to cybersecurity or just want to learn how to protect yourself from scams and threats, 
+            this is your chance to join a powerful community. Sign up below and become part of the mission to stay safe online 
+            and help others do the same. </p>
+        </div>
+        <div class="rsvp-participants">
+            <p>💻 Rahmel from Georgia is joining the Cyber Scanner mission.</p>
+            <p>💻 Johnny from New York is ready to learn and protect.</p>
+            <p>💻 Diana from Montana is standing up against online threats.</p>
+            <p id="rsvp-count">"🛡️ 3 people have RSVP'd to this event!"</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" class="rsvp-form" title="rsvp-form">
+            <label for="rsvp-name">Name:</label>
+            <input type="text" id="rsvp-name" name="name" required>
+
+            <label for="rsvp-state">Home State:</label>
+            <input type="text" id="rsvp-state" name="state" required>
+
+            <label for="rsvp-email">Email:</label>
+            <input type="email" id="rsvp-email" name="email" required>
+
+            <button type="submit" id="rsvp-button">Submit RSVP</button>
+  </form>
+</div>
+
+ <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-item">
+      <p id="modal-text">
+        Congrats!! 🎉 You have been ✅ ACCEPTED<br>
+        You are now an RSVP member at Cyber Scanner.
+        We'll contact you in 3-7 business days to get you started.
+        Be ready to help the community.
+      </p>
+      <button id="close-modal-button" class="modal-close-button">Close</button>
+    </div>
+    <div class="modal-item">
+      <img src="https://st.depositphotos.com/1717137/1269/v/950/depositphotos_12691995-stock-illustration-smart-dog-with-computer.jpg" alt="Cyber Scanner mascot" width="250">
+    </div>
+  </div>
+</div>
+
+        <h2 id="about">About the Event</h2>
+    <div class="center-video1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EHqXMxY4_Nk?si=NMmlQHlOfRi2kvq" title="YouTube video player"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+        <p><i>Cyber Scanner will raise awareness and solve your problems when it comes to threats.
+        Everyday users who are curious to learn the basics of cybersecurity and understand
+        how to stay safe online.</i></p>
+        <p> What you you waiting for join the community at Cyber Scanner and know how to take action     when you are being scam . </p>
+
+    <div class = "h4-section">
+        <h3>What to Expect.</h3>
+        <h4>Determination and Collaboration</h4>
+        <ul>
+            <li> <b>Listen and share:</b> <i>You will hear from many people there experience and how they handle there cyber situition. </i></li>
+            <li> <b>Debug real-world problems:</b> <i>People will problem-solve common cyber issues that people face everyday and laptops will be distributed in the beginning of the event.</i></li>
+            <li> <b>Break rooms and check-ins:</b> <i>You will share your experience and ask any question about the problems that was given during the event.</i></li>
+        </ul>
+        </div>
+
+
+       
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+     <h2 id="schedule">Event Schedule</h2>
+
+    <div class="schedule-container">
+
+        <div class="schedule-item">
+            <img alt="Cyber Threat Briefing - Image" src="https://aware.eccouncil.org/images/blog/blog%201.jpg" class="event1-image"/>
+            <h3>Friday Night! - Cyber Threat Briefing </h3>
+            <p>Learn about fraud, the basics of cybersecurity, and real-world examples breaches.</p> 
+        </div>
+
+        <div class="schedule-item">
+            <img alt="Digital Shield - Image" src="https://neinsure.com/wp-content/uploads/2022/11/Tips-for-Protecting-Your-Business-from-Cyber-Security-Threats.jpg" class="event2-image"/>
+            <h3>Saturday - Build your Digital Shield</h3>
+            <p>Learn how to detect threats, set up two-factor autictaion, and design a strong password .</p>
+        </div>
+
+        <div class="schedule-item">
+            <img alt="Computer Event - image" src="https://rclick.com/wp-content/uploads/2025/03/How-Security-Information-and-Event-Management-SIEM-is-Changing-to-Meet-Todays-Cybersecurity-Challenges.webp" 
+            class="schedule-image"/>
+            <h3>Sunday - Final Presentations</h3>
+            <p>Reflect on lessons learned, share your project with the group, and prevent threats in the real-world.</p>
+    </div>
+
+</div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div class = "center-video2">
+        <h2>Watch this quick video on common threats that people encounter</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VzKsW54_DaQ?si=TF72ptiSfgSUoIWf" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+            
+          <h2 id="links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="link" href="https://www.getastra.com/blog/security-audit/how-many-cyber-attacks-per-day/#How_Many_Cyber_Attacks_Happen_Per_Day_In_The_World">
+            <article>
+                <h3>How Many Cyber Attacks Per Day: The Latest Stats and Impacts in 2025</h3>
+                <p> Learn how cyber attacks affect people in-depth and where are they coming from mostly.  </p>
+            </article>
+        </a>
+
+         <a class="link" href="https://www.cybrary.it/cybrary-impact-hub?utm_medium=ppc&utm_source=adwords&utm_campaign=NS+2024+%7C+Branded+Search&utm_term=cybrary&gclid=CjwKCAjw9uPCBhATEiwABHN9K_bDzyMrTcztjnOBYdLSndx4A7n4ttoMsw73cojDhu7ti_z8LRhaSxoCYukQAvD_BwE">
+            <article>
+                <h3>Connect with others on the Cybrary Impact Hub</h3>
+                <p> Discuss and build relationships with a community that love to learn and engage in discussions about any cybersecurity issues. </p>
+            </article>
+        </a>
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+         <div class="footer">
+            <a href="https://cyberaware.com/security-awareness-training/">Cyber Aware Tips</a>
+            <a href="https://www.youtube.com/watch?v=fgd-osFId00&ab_channel=CISA">Stay Safe Online </a>
+         </div>
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+         <script src="index.js">
+
+         </script>
+         
+    </body>
+</html>
